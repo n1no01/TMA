@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    margin-top: 40px;
+    color: #1c93e3;
+}
+
+button{
+    width: 15%;
+    padding: 10px 5px;
+    font-weight: bold;
+    background-color: #1c93e3;
+    border-radius: 8px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#startBtn{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#modal{
+    margin:5% auto;
+    width: 40%;
+}
+
+#modal > button{
+    width: 30%;
+    padding: 15px 5px;
+}
+
+img{
+    width: 150px;
+    margin-top: 30px;
+}
+
+.displayFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+#ton-connect{
+    background-color: #1c93e3;
+    border-radius: 8px;
+    font-size: 13.3333px;
+    width: 30%;
+}
+
+button.go3974562317{
+    background-color: #1c93e3;
+    border-radius: 8px;
+    font-size: 13.3333px;
+    width: 100%;
+    height: 50px;
+}
+
+button.go3974562317:hover{
+   transform: scale(1);
+   cursor:default;
+}
+
+div.go1487791704 {
+    width: 100%;
+    font-size: 13.3333px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1c93e3;
+    color: black;
+}
+
+.displayFlexResponsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px){
+    img{
+        width: 115px;
+    }
+    
+    #modal > button{
+        width: 80%;
+        padding: 15px 5px;
+    }
+
+    #ton-connect{
+        width: 80%;
+    }
+
+    #startBtn{
+        margin-top: 40px;
+        font-size: 15px;
+        width: 30%;
+    }
+}

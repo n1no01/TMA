@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+   
+    <div id="main-screen">
+        <img src="telegramLogo.png" alt="">
+        <h1>Telegram Mini App</h1>
+        <button id="startBtn">Start</button>
+    </div>
+    <div id="modal" class="hidden">
+        <button id="websiteBtn">Website Redirect</button>
+        <button id="groupBtn">Telegram Group</button>
+        <div id="ton-connect"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+         const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+         manifestUrl: 'https://n1no01.github.io/telegram-mini-app-demo/tonconnect-manifest.json',
+         buttonRootId: 'ton-connect'
+         });
+     });
+     </script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="dist/script.js"></script>
+    
+</body>
+</html>
